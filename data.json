@@ -1,5 +1,5 @@
 {
-    "name": "test name"
-    "age": 18
+    "name": "test name",
+    "age": 18,
     "phone": "12345678"
 }
