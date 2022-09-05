@@ -1,31 +1,31 @@
 {
-  name: "news",
-  age: 20,
-  phone: "87654321",
-  news: [
-    {
-      title: "news title 1",
-      content: "news content 1"
-    },
-    {
-      title: "news title 2",
-      content: "news content 2"
-    },
-    {
-      title: "news title 3",
-      content: "news content 3"
-    },
-    {
-      title: "news title 4",
-      content: "news content 4"
-    },
-    {
-      title: "news title 5",
-      content: "news content 5"
-    },
-    {
-      title: "news title 6",
-      content: "news content 6"
-    }
-  ]
+    "name": "news",
+    "age": 20,
+    "phone": "87654321",
+    "news": [
+        {
+            "title": "news title 1",
+            "content": "news content 1"
+        },
+        {
+            "title": "news title 2",
+            "content": "news content 2"
+        },
+        {
+            "title": "news title 3",
+            "content": "news content 3"
+        },
+        {
+            "title": "news title 4",
+            "content": "news content 4"
+        },
+        {
+            "title": "news title 5",
+            "content": "news content 5"
+        },
+        {
+            "title": "news title 6",
+            "content": "news content 6"
+        }
+    ]
 }
