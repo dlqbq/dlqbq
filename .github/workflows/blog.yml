@@ -41,20 +41,22 @@ jobs:
         run: git clone https://github.com/xiangming/landscape-plus.git themes/landscape-plus
       - name: Build
         run: npm run build
+      - name: Deploy
+        run: hexo clean && hexo deploy
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+ # deploy:
+ #   needs: build
+ #   permissions:
+ #     pages: write
+ #     id-token: write
+ #   environment:
+ #     name: github-pages
+ #     url: ${{ steps.deployment.outputs.page_url }}
+ #   runs-on: ubuntu-latest
+ #   steps:
+ #     - name: Deploy to GitHub Pages
+  #      id: deployment
+ #       uses: actions/deploy-pages@v4
