@@ -4,8 +4,8 @@
 
 # Site
 title: QQ
-subtitle: 'subtitle'
-description: 'description'
+subtitle: 'Like MM'
+description: 'From css to SQL'
 keywords: 'keywords'
 author: 'DLQBQ'
 language: default
@@ -100,6 +100,10 @@ ignore:
 theme: landscape-plus
 # theme: sw
 # theme: PreciousJoy
+
+# Links
+links:
+  Home page: https://dlqbq.github.io/dlqbq/
 
 # Search
 search:
