@@ -7,7 +7,7 @@ title: 常用cdn
 
 * unpkg：老牌cdn，比jsdeliver稳定，网址：https://unpkg.com/
 
-*fastly.jsdelivr：老牌cdn，jsdeliver的快速版，比jsdeliverk稳定一点，网址：https://fastly.jsdelivr.net
+* fastly.jsdelivr：老牌cdn，jsdeliver的快速版，比jsdeliverk稳定一点，网址：https://fastly.jsdelivr.net
 
 ## 国内稳定CDN，可能功能不全
 
