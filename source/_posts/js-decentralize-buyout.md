@@ -3,20 +3,26 @@ title: JavaScript去中心化p2p实现之bugout
 date: 2024-06-04 00:00:00
 ---
 ### 安装
-```npm i bugout```
+``` shell
+npm i bugout
+```
 
 或者使用script
 
-```<script src="https://chr15m.github.io/bugout/bugout.min.js"></script>```
+``` html
+<script src="https://chr15m.github.io/bugout/bugout.min.js"></script>
+```
 
 ### 使用
 导入Bugout
 
-```var Bugout = require('bugout')```
+``` javascript
+var Bugout = require('bugout')
+```
 
 创建Bugout服务器：
 
-```
+``` javascript
 // 实例化Bugout
 var  b  = new Bugout（)
 //  获取要与客户端共享的服务器地址（公钥哈希）
@@ -35,7 +41,7 @@ localStorage['bugout-server-seed'] = b.seed
 
 客户端与服务器端链接
 
-```
+``` javascript
 var b = new Bugout('服务器的公钥')
  
 //  等待，直到我们看到服务器
@@ -56,7 +62,7 @@ localStorage['bugout-seed'] = JSON.stringify(b.seed);
 
 客户端和服务器与其他连接的客户端进行交互
 
-```
+``` javascript
 //  从服务器接收所有带外消息
 //  或其他任何连接的客户端
 b.on('message', function(address, message) {
@@ -74,6 +80,6 @@ b.close();
 
 所有人连接共同的Bugout服务器
 
-```
+``` javascript
 var b = new Bugout('特定的共享标识符')
 ```
