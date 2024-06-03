@@ -42,7 +42,7 @@ jobs:
       - name: Build
      #   run: npm run build
         run: |
-          git config --global user.email "${{ secrets.EMAIL }}  
+          git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "${{ secrets.USER_NAME }}"
       - name: Deploy
         run: npm run clean && npm run deploy
