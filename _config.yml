@@ -100,6 +100,9 @@ ignore:
 theme: landscape-plus
 # theme: sw
 # theme: PreciousJoy
+# theme: next
+# theme: cyanstyle
+# theme: lap
 
 # Links
 links:
@@ -107,7 +110,7 @@ links:
 
 # Search
 search:
-  path: search.xml
+  path: /dlqbq/search.xml
   field: post
   format: html
   limit: 10000
@@ -116,6 +119,9 @@ local_search:
   enable: true
   trigger: auto
   top_n_per_article: 1
+
+vendors:
+  plugins: unpkg
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
